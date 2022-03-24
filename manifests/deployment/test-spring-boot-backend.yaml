@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fake-spring-boot-backend
+  labels:
+    app: fake-spring-boot-backend
+    purpose: mock-service
+spec:
+  selector:
+    matchLabels:
+      app: fake-spring-boot-backend
+      purpose: mock-service
+  template:
+    metadata:
+      name: fake-spring-boot-backend
+      labels:
+        app: fake-spring-boot-backend
+        purpose: mock-service
+    spec:
+      containers:
+        - name: fake-spring-boot-backend
+          image: raaaaaaaay86/test-spring-boot-backend
