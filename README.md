@@ -33,7 +33,7 @@ Example response:
 ```
 
 
-## /test/geJson
+## /test/getJson
 Example response:
 ```json
 {
